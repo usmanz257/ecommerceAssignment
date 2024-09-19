@@ -1,0 +1,58 @@
+<div class="bg-section">
+  <div>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Zain</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" aria-current="page" href="#">Personal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">Zain Bahrain</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">Zain eSports</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="search-bar">
+      <div class="container">
+        <div class="position-relative">
+          <form class="container-fluid p-0">
+            <div class="input-group input-field">
+              <input #searchInput type="text" class="form-control border-0" placeholder="Search" aria-label="Search"
+                aria-describedby="basic-addon1" [value]="this.productService.form.search"
+                (keyup)="searchProduct($event)">
+              <button class="input-group-text" id="basic-addon1" (click)="search(searchInput.value)"><i
+                  class="bi bi-search"></i></button>
+            </div>
+          </form>
+          <div class="card web-only mt-2 px-3" *ngIf="filterList.length > 0">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of filterList" (click)="search(searchInput.value)">{{item.device}}</li>
+            </ul>
+            <div>
+              <button type="button" class="btn btn-outline-dark btn-rounded fw-semibold mt-4" (click)="search(searchInput.value)">View More</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <app-search-list></app-search-list> -->
+ 
+</div>
+
+<app-footer></app-footer>

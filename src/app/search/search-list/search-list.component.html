@@ -1,0 +1,72 @@
+<div class="bg-main-color pb-3" appScrollNearEnd (nearEnd)="viewMore()">
+  <div class="container">
+    <div class="row">
+      <!-- <form name="form" #forms="ngForm" (ngSubmit)="applyFilter()"> -->
+      <div class="col-md-4 col-lg-2 col-12 mb-4">
+        <select class="form-select" name="brand" #brand="ngModel" [(ngModel)]="this.productService.form.brand" aria-label="Brand">
+          <option *ngFor="let item of brandList" value="{{item.value}}">{{item.text}}</option>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-2 col-12 mb-4">
+        <select class="form-select" aria-label="Color" name="color" #color="ngModel" [(ngModel)]="this.productService.form.color">
+          <option *ngFor="let item of colorList" value="{{item.value}}">{{item.text}}</option>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-2 col-12 mb-4">
+        <select class="form-select" aria-label="Capacity" name="capacity" #capacity="ngModel"
+          [(ngModel)]="this.productService.form.capacity">
+          <option *ngFor="let item of capacityList" value="{{item.value}}">{{item.text}}</option>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-2 col-12 mb-4">
+        <select class="form-select" aria-label="Category" name="category" #category="ngModel"
+          [(ngModel)]="this.productService.form.category">
+          <option *ngFor="let item of categoryList" value="{{item.value}}">{{item.text}}</option>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-2 col-12 mb-4">
+        <select class="form-select" aria-label="In Stock" name="inStock" #inStock="ngModel" [(ngModel)]="this.productService.form.inStock">
+          <option *ngFor="let item of inStockList" value="{{item.value}}">{{item.text}}</option>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-2 col-12 mb-4">
+        <select class="form-select" aria-label="Sort by" name="sortBy" #sortBy="ngModel" [(ngModel)]="this.productService.form.sortBy">
+          <option *ngFor="let item of sortByList" value="{{item.value}}">{{item.text}}</option>
+        </select>
+      </div>
+      <!-- </form> -->
+    </div>
+    <div class="row text-white">
+      <div class="col-md-6 col-lg-6 col-12">
+        <h1>Search Results</h1>
+        <h6>"{{this.productService.numberOfSearchResult}}" Search Results Found for {{this.productService.form.search}}</h6>
+      </div>
+      <div class="col-md-6 col-lg-6 col-12">
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-outline-light btn-rounded fw-semibold mt-4 mx-3" (click)="clearFilters()">Clear</button>
+          <button type="button" class="btn btn-outline-light btn-rounded fw-semibold mt-4" (click)="applyFilter()">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container text-center py-5">
+  <div class="row align-items-center">
+    <div class="col-lg-4 col-md-6 col-12 mb-5" *ngFor="let product of FilteredproductList">
+      <div class="card card-design">
+        <img
+          src="https://eshop.bh.zain.com/sites/default/files/ImagesDir/2022-09/445x445___0003_iPhone_14_Midnight_Pure_Back_iPhone_14_Midnight_Pure_Front_2-up_Screen__USEN.png"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="text-start card-title">{{product.device}}</h4>
+          <h6 class="text-start card-subtitle my-2 mb-4  text-body-secondary">Starting from <em
+              class="ml-2"><b>{{product.price}}$</b></em> </h6>
+          <a href="#" class="btn bg-main-color text-white w-100 btn-rounded my-1 fw-semibold">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center" *ngIf="FilteredproductList.length !== this.productService.numberOfSearchResult">
+    <button type="button" class="btn btn-outline-dark btn-rounded fw-semibold" (click)="viewMore()">View More</button>
+  </div>
+</div>

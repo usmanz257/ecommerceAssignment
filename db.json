@@ -1,0 +1,147 @@
+{
+    "products":[{
+        "id":1,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 16 pro max",
+        "color":"white",
+        "capacity":64,
+        "stock":12,
+        "price":1100,
+        "releaseDate":"11/09/2024"
+    },
+    {
+        "id":2,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 16 pro",
+        "color":"white",
+        "capacity":64,
+        "stock":12,
+        "price":1020,
+        "releaseDate":"11/09/2024"
+    },
+    {
+        "id":3,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 15 pro max",
+        "color":"white",
+        "capacity":256,
+        "stock":12,
+        "price":1000,
+        "releaseDate":"11/09/2023"
+    },
+    {
+        "id":4,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 15 pro",
+        "color":"white",
+        "capacity":256,
+        "stock":12,
+        "price":950,
+        "releaseDate":"11/09/2023"
+    },
+    {
+        "id":5,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 14 pro max",
+        "color":"white",
+        "capacity":128,
+        "stock":12,
+        "price":900,
+        "releaseDate":"11/09/2022"
+    },
+    {
+        "id":6,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 14 pro",
+        "color":"white",
+        "capacity":128,
+        "stock":12,
+        "price":975,
+        "releaseDate":"11/09/2022"
+    },
+    {
+        "id":7,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 13 pro max",
+        "color":"white",
+        "capacity":512,
+        "stock":12,
+        "price":850,
+        "releaseDate":"11/09/2021"
+    },
+    {
+        "id":8,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 13 pro",
+        "color":"white",
+        "capacity":512,
+        "stock":12,
+        "price":800,
+        "releaseDate":"11/09/2021"
+    },
+    {
+        "id":9,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 12 pro max",
+        "color":"white",
+        "capacity":256,
+        "stock":12,
+        "price":800,
+        "releaseDate":"11/09/2020"
+    },
+    {
+        "id":10,
+        "category":"Mobile",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 12 pro max",
+        "color":"white",
+        "capacity":256,
+        "stock":12,
+        "price":750,
+        "releaseDate":"11/09/2020"
+    },
+    {
+        "id":11,
+        "category":"Test1",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 11 pro max",
+        "color":"white",
+        "capacity":256,
+        "stock":12,
+        "price":700,
+        "releaseDate":"11/09/2019"
+    },
+    {
+        "id":12,
+        "category":"Test",
+        "brand":"Apple",
+        "vandor":"apple store",
+        "device":"iphone 11 pro max",
+        "color":"white",
+        "capacity":256,
+        "stock":12,
+        "price":650,
+        "releaseDate":"11/09/2019"
+    }
+]
+}

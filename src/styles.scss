@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+$main-color:#37475A;
+$bg-body-main:#89c9c9;
+.web-only{
+    direction: ltr;
+    position: absolute !important;
+    width: 100%;
+    border-radius: 9px !important;
+    z-index: 10000 !important;
+    background-color: #fff !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    li{
+        border-bottom: 1px solid #919191 !important;
+        cursor: pointer;
+    }
+    li:hover{
+        background: #f0f0f0;
+    }
+}
+.search-bar{
+    @extend .bg-main-color;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.bg-main-color{
+   background-color: $main-color!important;
+}
+.bg-body-main{
+    background:$bg-body-main!important;
+}
+.card-design{
+    box-shadow:  0 0 .5rem rgba(10, 10, 10, 0.1)!important;
+    border-radius: 16px!important;
+}
+.bg-section{
+    background: #f2f2f2;
+}
+.list-group-item:last-child,
+.list-group-item:first-child{
+    border-radius: 0px!important;
+}
+.btn-rounded{
+    border-radius: 20px!important;
+}
+.input-field{
+    height: 40px;
+}
+.carousel-set{
+  transform: translate(0px ,0px);
+}
+.modal-dialog{
+    width: 100%;
+    max-width: 100%!important;
+    padding: 20px;
+    margin: 0!important;
+
+}
